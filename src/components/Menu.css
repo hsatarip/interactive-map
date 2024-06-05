@@ -1,0 +1,85 @@
+/* src/Menu.css */
+.menu-container {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+}
+
+.menu-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+  margin-right: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+.menu-button:hover {
+  background-color: #0056b3;
+}
+
+.popup {
+  position: fixed;
+  top: 60px;
+  left: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  max-width: 300px;
+  z-index: 2;
+  transition: opacity 0.3s, transform 0.3s;
+  transform: translateY(-10px);
+  opacity: 0;
+}
+
+.popup.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.popup input {
+  width: calc(100% - 20px);
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.map-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.geocoder-container {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  width: 50%;
+}
+
+.property-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.property-item {
+  padding: 10px 0;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+}
+
+.property-item:hover {
+  background-color: #f0f0f0;
+}
